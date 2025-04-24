@@ -78,3 +78,6 @@ For detailed information about each implementation, please refer to the README f
 
 - [Next.js 14 README](/14/README.md)
 - [Next.js 15 README](/15/README.md)
+
+# issue
+https://github.com/vercel/next.js/issues/78493
