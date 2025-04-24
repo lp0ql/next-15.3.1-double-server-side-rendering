@@ -19,6 +19,15 @@ This repository verifies the following issue:
 2. And that page performs a `redirect()` during server-side rendering
 3. The destination page gets server-side rendered **twice**
 
+## Version Information
+
+This issue has been verified in:
+
+- Next.js 15.3.1 (included in this repository)
+- Next.js 15.4.0-canary.7 (tested separately, not included in this repository)
+
+The bug persists across these versions, indicating it's not yet resolved in the latest canary builds.
+
 ## How to Run the Demonstrations
 
 ### Next.js 14 (Correct Behavior)
