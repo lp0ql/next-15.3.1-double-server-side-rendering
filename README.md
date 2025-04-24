@@ -4,12 +4,13 @@ This repository demonstrates a specific bug in Next.js 15 where server component
 
 ## Repository Structure
 
-This repository contains two separate Next.js applications:
+This repository contains three separate Next.js applications:
 
 - **`/14` directory**: Contains a Next.js 14.2.28 application that demonstrates the correct behavior
 - **`/15` directory**: Contains a Next.js 15.3.1 application that demonstrates the bug
+- **`/15-reproduction-template` directory**: Contains an official Next.js reproduction template with minimal code to demonstrate the issue (created with `npx create-next-app -e reproduction-template`)
 
-Both directories contain identical code structures, allowing for direct comparison of behavior between versions.
+Both the `/14` and `/15` directories contain identical code structures, allowing for direct comparison of behavior between versions. The `/15-reproduction-template` directory follows the official Next.js issue reproduction template format.
 
 ## The Bug Being Verified
 
@@ -48,17 +49,28 @@ npm run dev
 # Access http://localhost:3000
 ```
 
+### Next.js 15 Reproduction Template (Official Format)
+
+```bash
+cd 15-reproduction-template
+npm install
+npm run dev
+# Access http://localhost:3000
+```
+
 ## Expected Results
 
 - **Next.js 14**: The server console will show each component being rendered exactly once
 - **Next.js 15**: The server console will show destination components being rendered twice when redirected after client-side navigation
+- **Next.js 15 Reproduction Template**: Following the official reproduction template format, this also demonstrates the double rendering issue in a format ready for submission to the Next.js issue tracker
 
 ## Test Scenarios
 
-Both applications include:
+The applications include:
 
 1. **Minimal Reproduction**: A stripped-down test case that clearly shows the issue
 2. **Real-World Example**: A practical example with a fruit shop and music shop that demonstrates the bug in a realistic scenario
+3. **Official Template**: A version that follows Next.js's official issue reproduction template format
 
 ## Additional Information
 
